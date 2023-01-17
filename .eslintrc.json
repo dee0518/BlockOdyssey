@@ -1,0 +1,67 @@
+{
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "es2022": true
+  },
+  "globals": { "_": true },
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": [
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "no-console": "warn",
+    "no-plusplus": "off",
+    "no-shadow": "off",
+    "no-alert": "off",
+    "vars-on-top": "off",
+    "no-underscore-dangle": "off",
+    "comma-dangle": "off",
+    "func-names": "off",
+    "prettier/prettier": 0,
+    "prefer-template": "off",
+    "no-nested-ternary": "off",
+    "max-classes-per-file": "off",
+    "consistent-return": "off",
+    "no-restricted-syntax": ["off", "ForOfStatement"],
+    "prefer-arrow-callback": "error",
+    "require-await": "error",
+    "arrow-parens": ["error", "as-needed"],
+    "no-param-reassign": ["error", { "props": false }],
+    "react/default-props-match-prop-types": "off",
+    "react/require-default-props": "off",
+    "no-unused-expressions": [
+      "warn",
+      {
+        "allowTernary": true,
+        "allowShortCircuit": true,
+        "allowTaggedTemplates": true
+      }
+    ],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": 0,
+    "import/extensions": ["error", "ignorePackages", { "ts": "never", "tsx": "never", "js": "never" }],
+    "@typescript-eslint/no-unused-vars": 2,
+    "no-empty-pattern": 2,
+    "no-case-declarations": 2,
+    "@typescript-eslint/no-empty-interface": 2,
+    "import/no-unresolved": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}
