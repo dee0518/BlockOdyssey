@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, useState, useEffect, memo } from 'react';
+import { ChangeEvent, FormEvent, useState, useEffect, memo, useCallback } from 'react';
 import { useReduxDispatch } from 'hooks/useRedux';
 import { productActions } from 'store/product';
 import SelectBox from 'components/SelectBox';
@@ -14,35 +14,38 @@ const SearchForm = () => {
   const [isOepn, setIsOpen] = useState(false);
   const [search, setSearch] = useState<iProductSearch>(defaultSearch);
 
-  const onChange = (e: ChangeEvent) => {
+  const onChange = useCallback((e: ChangeEvent) => {
     const { name, value } = e.target as HTMLInputElement;
     setSearch(prev => ({ ...prev, [name]: value }));
-  };
+  }, []);
 
-  const onToggle = () => {
+  const onToggle = useCallback(() => {
     setIsOpen(prev => !prev);
-  };
+  }, []);
 
-  const onOpen = () => {
+  const onOpen = useCallback(() => {
     setIsOpen(true);
-  };
+  }, []);
 
-  const onClose = (ev: any) => {
+  const onClose = useCallback((ev: any) => {
     if ((ev.target as HTMLElement).closest('.select__box')) return;
     setIsOpen(false);
-  };
+  }, []);
 
-  const onClick = (id: string) => {
+  const onClick = useCallback((id: string) => {
     setSearch(prev => ({ ...prev, category: id }));
     setIsOpen(false);
-  };
+  }, []);
 
-  const onSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const { category, keyword } = search;
-    window.history.pushState('', '', `?category=${category}&keyword=${keyword}`);
-    dispatch(productActions.setFilterList(search));
-  };
+  const onSubmit = useCallback(
+    (e: FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+      const { category, keyword } = search;
+      window.history.pushState('', '', `?category=${category}&keyword=${keyword}`);
+      dispatch(productActions.setFilterList(search));
+    },
+    [search]
+  );
 
   useEffect(() => {
     window.addEventListener('click', onClose);
