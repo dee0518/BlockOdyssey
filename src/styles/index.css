@@ -4,3 +4,11 @@
   list-style: none;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 0.625em;
+}
+
+body {
+  padding: 20px;
+}
