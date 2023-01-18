@@ -1,0 +1,75 @@
+.table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 0 10px 5px rgba(213, 213, 213, 0.3);
+}
+
+.table__header {
+  display: table-header-group;
+  font-weight: bold;
+}
+
+.table__header .table__cell {
+  padding: 24px 0;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.table__body {
+  display: table-row-group;
+}
+
+.table__body .table__cell {
+  border-bottom: 1px solid #eee;
+}
+
+.table__body .table__row:last-child .table__cell {
+  border-bottom: 0;
+}
+
+.table__row {
+  display: table-row;
+}
+
+.table__cell {
+  display: table-cell;
+  padding: 16px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.table__cell:first-child {
+  width: 100px;
+}
+
+.table__cell:last-child,
+.table__cell:nth-last-child(2),
+.table__cell:nth-last-child(3) {
+  width: 80px;
+}
+
+.table__cell:nth-last-child(4) {
+  width: 35%;
+}
+
+.empty {
+  position: relative;
+}
+
+.empty .table__cell {
+  padding: 30px 0;
+}
+
+.empty .table__cell:last-child:after {
+  content: '검색된 상품이 없습니다.';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 60px;
+}
