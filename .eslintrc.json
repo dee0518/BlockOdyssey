@@ -47,7 +47,6 @@
         "allowTaggedTemplates": true
       }
     ],
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": 0,
     "import/extensions": ["error", "ignorePackages", { "ts": "never", "tsx": "never", "js": "never" }],
