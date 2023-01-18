@@ -20,7 +20,8 @@ npm start
 
 - memo, useMemo, useCallback을 사용한 최적화
 - 모든 state가 바뀔 때마다 영향을 받는 부분에는 적용하지 않도록 하고 state에 한정적으로 영향을 받는 부분은 해당 state가 바뀔 때마다 렌더링될 수 있도록 최적화 적용하려고 했다.
-  <br>
+
+<br>
 
 # Commit Convention
 
