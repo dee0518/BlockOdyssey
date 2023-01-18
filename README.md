@@ -29,14 +29,14 @@ npm start
 
 | 아이콘                                       | 코드       | 설명                     | 원문                                                 |
 | -------------------------------------------- | ---------- | ------------------------ | ---------------------------------------------------- |
-| 💄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | :lipstick: | UI/스타일 파일 추가/수정 | Add or update the UI and style files.                |
-| 🎨                                           | :art:      | 코드의 구조/형태 개선    | Improve structure / format of the code.              |
-| ✨                                           | :sparkles: | 새 기능                  | Introduce new features.                              |
-| ♻️                                           | :recycle:  | 코드 리팩토링            | Refactor code.                                       |
-| 🔥                                           | :fire:     | 코드/파일 삭제           | Remove code or files.                                |
-| 🐛                                           | :bug:      | 버그 수정                | Fix a bug.                                           |
-| 🚚                                           | :truck:    | 리소스 이동, 이름 변경   | Move or rename resources (e.g.: files paths routes). |
-| 📝                                           | :memo:     | 문서 추가/수정           | Add or update documentation.                         |
-| 🎉                                           | :tada:     | 프로젝트 시작            | Begin a project.                                     |
-| 🔧                                           | :wrench:   | 구성 파일 추가/삭제      | Add or update configuration files.                   |
-| 📦                                           | :package:  | 컴파일된 파일 추가/수정  | Add or update compiled files or packages.            |
+| 💄&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | : lipstick: | UI/스타일 파일 추가/수정 | Add or update the UI and style files.                |
+| 🎨                                           | : art:      | 코드의 구조/형태 개선    | Improve structure / format of the code.              |
+| ✨                                           | : sparkles: | 새 기능                  | Introduce new features.                              |
+| ♻️                                           | : recycle:  | 코드 리팩토링            | Refactor code.                                       |
+| 🔥                                           | : fire:     | 코드/파일 삭제           | Remove code or files.                                |
+| 🐛                                           | : bug:      | 버그 수정                | Fix a bug.                                           |
+| 🚚                                           | : truck:    | 리소스 이동, 이름 변경   | Move or rename resources (e.g.: files paths routes). |
+| 📝                                           | : memo:     | 문서 추가/수정           | Add or update documentation.                         |
+| 🎉                                           | : tada:     | 프로젝트 시작            | Begin a project.                                     |
+| 🔧                                           | : wrench:   | 구성 파일 추가/삭제      | Add or update configuration files.                   |
+| 📦                                           | : package:  | 컴파일된 파일 추가/수정  | Add or update compiled files or packages.            |
